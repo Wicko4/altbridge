@@ -1,0 +1,81 @@
+:root {
+  --text: #9ca3af; /* Default to dark mode text */
+  --text-h: #f3f4f6;
+  --bg: #111111; /* Deep cinematic black */
+  --border: transparent; /* Removed borders */
+  
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: "'Playfair Display'", system-ui, serif; /* Adjusted for your classy font */
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Update this block in your index.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: clip; /* FIX: 'clip' hides horizontal scroll but allows sticky to work! */
+  background-color: var(--bg);
+  color: white;
+}
+
+/* THE NUCLEAR FIX FOR HIDING THE DEFAULT CURSOR */
+html,
+body,
+*,
+*::before,
+*::after,
+*:hover,
+*:active,
+*:focus {
+  cursor: none !important;
+}
+
+/* Removed the 1126px width, removed the border-inline, 
+  and made it span the full width of the screen. 
+*/
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
