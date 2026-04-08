@@ -5,10 +5,11 @@ import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import AboutUsPage from './pages/AboutUsPage'; // <-- 1. Import the new page
 import ContactPage from './pages/ContactUsPage';
+import ProductsPage from './pages/ProductsPage';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/altbridge">
       <CustomCursor />
       
       <Routes>
@@ -17,6 +18,7 @@ export default function App() {
         {/* 2. Add the Route path */}
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/products" element={<ProductsPage />} />
       </Routes>
     </Router>
   );

@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import CTASection from '../components/CTASection';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import harshImage from '../assets/pic_HARSH_2024.png';
+
 
 // --- SUB-COMPONENT: HERO SECTION ---
 function AboutHero() {
@@ -69,18 +71,17 @@ function AboutHero() {
 // --- SUB-COMPONENT: CORE TEAM ---
 function CoreTeam() {
   const teamMembers = [
-    { name: 'Harsh Bharwani', role: 'CEO', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80' },
+    { name: 'Harsh Bharwani', role: 'CEO', image: harshImage},
     { name: 'Akshaya', role: 'CFO', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80' },
     { name: 'Bhavya Shah', role: 'COO', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80' },
     { name: 'Joshua Dsilva', role: 'CTO', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80' },
-    { name: 'Khushal Rathi', role: 'Director', image: 'https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?auto=format&fit=crop&w=200&q=80' }
+    { name: 'Khushal Rathi', role: 'CMO', image: 'https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?auto=format&fit=crop&w=200&q=80' }
   ];
 
   return (
     <div style={{ width: '100%', backgroundColor: '#111111', padding: '120px 5vw', boxSizing: 'border-box', display: 'flex', justifyContent: 'center' }}>
       <div style={{ maxWidth: '1200px', width: '100%' }}>
         
-        {/* HEADER SECTION (Split layout matching the screenshot) */}
         <div style={{ 
           display: 'flex', 
           flexWrap: 'wrap', 

@@ -72,6 +72,7 @@ export default function Navbar({ show }) {
         {/* Now we just use our clean NavItem component! */}
         <NavItem to="/" label="Home" />
         <NavItem to="/services" label="Services" />
+        <NavItem to="/products" label="Products" />
         <NavItem to="/about" label="About Us" />
         <NavItem to="/contact" label="Contact" />
         
